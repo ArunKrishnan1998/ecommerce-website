@@ -1,0 +1,51 @@
+@keyframes slideIn {
+    from {right: -100%; opacity: 0;}
+    to {right: 0%; opacity: 1;}
+}
+
+.notification {
+    display: flex;
+    position: relative ;
+    width: 250px;
+    height: 60px;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px;
+    margin-top: 20px;
+    animation: slideIn 0.5s forwards;
+}
+
+.notification_container {
+    display: flex;
+}
+
+.notification_image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.notification_item_info {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification_item_name {
+    margin-bottom: 10px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notification_close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
